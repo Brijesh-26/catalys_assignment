@@ -1,4 +1,4 @@
-# Flask Application with Docker
+# Flask Application Assignment 
 
 This repository contains a Flask application that has been dockerized for easy deployment and consistency across different environments.
 
