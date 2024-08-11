@@ -1,6 +1,6 @@
-# Flask Application
+# Flask Application with Docker
 
-This Flask application simulates a simplified version of a data retrieval and processing system.
+This repository contains a Flask application that has been dockerized for easy deployment and consistency across different environments.
 
 ## Features
 
@@ -12,12 +12,18 @@ This Flask application simulates a simplified version of a data retrieval and pr
 
 ### Prerequisites
 
-- Python 3.6 or higher
-- Flask (can be installed via pip)
+- Docker (Ensure Docker is installed and running on your machine)
 
-### Installation
+### Building the Docker Image
 
-1. Clone the repository:
+1. Navigate to the directory containing the `Dockerfile`:
    ```bash
-   git clone <repository-url>
-   cd flask_app
+   cd /path/to/flask_app
+
+2. Build the Docker image
+   ```bash
+   docker build -t flask_app .
+
+3. Run the Docker container
+   ```bash
+   docker run -p 5000:5000 flask_app
